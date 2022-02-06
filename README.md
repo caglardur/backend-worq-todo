@@ -1,5 +1,9 @@
 # Backend for Worq-TODO
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ecabbd98faf83c418386f2e087b18023e43b5a97
 ## Repository Klonlama
 
 Repository'i kendi bilgisayarınıza klonlayın.
@@ -26,6 +30,7 @@ PGPASSWORD=
 PGPORT=
 ```
 
+<<<<<<< HEAD
 ## Database yapısı
 
 ```bash
@@ -40,6 +45,8 @@ PGPORT=
  is_complated  | boolean                  |                      | not null            | false
 ```
 
+=======
+>>>>>>> ecabbd98faf83c418386f2e087b18023e43b5a97
 ## Çalıştırma
 
 Projeyi çalıştırmak için aşağıdaki komutu terminalinize yazın.
