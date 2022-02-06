@@ -1,5 +1,14 @@
 # Backend for Worq-TODO
 
+Bu proje [frontend-Worq-todo](https://github.com/caglardur/frontend-worq-todo) uygulamasını beslemek için hazırlanmıştır. Database için [Postgresql](https://www.postgresql.org/) kullanılmıştır.
+
+Kullanılan paketler:
+
+- [Express](https://expressjs.com/)
+- [cors](https://www.npmjs.com/package/cors)
+- [pg](https://www.npmjs.com/package/pg)
+- [dotenv](https://www.npmjs.com/package/dotenv)
+
 ## Repository Klonlama
 
 Repository'i kendi bilgisayarınıza klonlayın.
