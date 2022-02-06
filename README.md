@@ -1,9 +1,5 @@
 # Backend for Worq-TODO
 
-# <<<<<<< HEAD
-
-> > > > > > > ecabbd98faf83c418386f2e087b18023e43b5a97
-
 ## Repository Klonlama
 
 Repository'i kendi bilgisayarınıza klonlayın.
