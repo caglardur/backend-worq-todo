@@ -49,5 +49,5 @@ PGPORT=
 Projeyi çalıştırmak için aşağıdaki komutu terminalinize yazın.
 
 ```bash
-npm run dev
+npm start
 ```
