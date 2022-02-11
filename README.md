@@ -37,6 +37,8 @@ PGPORT=
 
 ## Database oluşturma
 
+"tasks" isimli postgres tablosu oluşturmak için:
+
 ```bash
 CREATE TABLE public.tasks (
     id bigserial NOT NULL,
@@ -47,6 +49,8 @@ CREATE TABLE public.tasks (
     is_complated boolean DEFAULT false NOT NULL
 );
 ```
+
+Oluşturulan tablonun detayları:
 
 ```bash
                                                    Tablo "public.tasks"
