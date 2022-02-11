@@ -35,7 +35,18 @@ PGPASSWORD=
 PGPORT=
 ```
 
-## Database yapısı
+## Database oluşturma
+
+```bash
+CREATE TABLE public.tasks (
+    id bigserial NOT NULL,
+    title character varying(50) NOT NULL,
+    description text NOT NULL,
+    posting_date timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    updating_date timestamp with time zone,
+    is_complated boolean DEFAULT false NOT NULL
+);
+```
 
 ```bash
                                                    Tablo "public.tasks"
