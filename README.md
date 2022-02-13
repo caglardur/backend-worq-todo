@@ -46,7 +46,7 @@ CREATE TABLE public.tasks (
     description text NOT NULL,
     posting_date timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     updating_date timestamp with time zone,
-    is_complated boolean DEFAULT false NOT NULL
+    is_completed boolean DEFAULT false NOT NULL
 );
 ```
 
@@ -61,7 +61,7 @@ Oluşturulan tablonun detayları:
  description   | text                     |                      | not null            |
  posting_date  | timestamp with time zone |                      | not null            | CURRENT_TIMESTAMP
  updating_date | timestamp with time zone |                      |                     |
- is_complated  | boolean                  |                      | not null            | false
+ is_completed  | boolean                  |                      | not null            | false
 ```
 
 ## Çalıştırma

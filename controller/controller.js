@@ -29,13 +29,13 @@ const postTask = async (req, res, next) => {
 }
 
 const updateTask = async (req, res, next) => {
-  const { title, description, is_complated } = req.body
+  const { title, description, is_completed } = req.body
   const { taskId } = req.params
   const updating_date = new Date().toISOString()
 
   try {
-    if (is_complated) {
-      const { rows } = await db.query("UPDATE tasks SET is_complated = $1, updating_date=$2 where id = $3 returning *", [is_complated, updating_date, taskId])
+    if (is_completed) {
+      const { rows } = await db.query("UPDATE tasks SET is_completed = $1, updating_date=$2 where id = $3 returning *", [is_completed, updating_date, taskId])
       res.status(200).json(rows[0])
     } else {
       const { rows } = await db.query("UPDATE tasks SET title = $1, description = $2, updating_date= $3 where id = $4 returning *", [title, description, updating_date, taskId])
