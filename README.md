@@ -26,6 +26,8 @@ npm install
 
 ## ENV file örneği:
 
+Postgres bağlantısı için .env dosyasına aşağıdaki anahtarlar karşılıkları ile beraber eklenmelidir:
+
 ```bash
 PORT=
 PGHOST=
@@ -37,7 +39,7 @@ PGPORT=
 
 ## Database oluşturma
 
-"tasks" isimli postgres tablosu oluşturmak için:
+"tasks" isimli postgres tablosu oluşturmak için aşağıdaki kodu sql shell'e yazınız.
 
 ```bash
 CREATE TABLE public.tasks (

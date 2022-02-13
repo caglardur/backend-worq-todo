@@ -6,7 +6,7 @@ const getTasks = async (req, res, next) => {
     const { rows } = await db.query("select * from tasks")
     res.status(200).json(rows)
   } catch (err) {
-    const error = new HttpError("An unexpected problem has occurred.", 500)
+    const error = new HttpError(err.message, 500)
     return next(error)
   }
 }
@@ -23,7 +23,7 @@ const postTask = async (req, res, next) => {
     const { rows } = await db.query("INSERT INTO tasks (title, description) values ($1, $2) returning *", [title, description])
     res.status(200).json(rows[0])
   } catch (err) {
-    const error = new HttpError("An unexpected problem has occurred.", 500)
+    const error = new HttpError(err.message, 500)
     return next(error)
   }
 }
@@ -42,7 +42,7 @@ const updateTask = async (req, res, next) => {
       res.status(200).json(rows[0])
     }
   } catch (err) {
-    const error = new HttpError("An unexpected problem has occurred.", 500)
+    const error = new HttpError(err.message, 500)
     return next(error)
   }
 }
