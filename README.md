@@ -29,7 +29,7 @@ npm install
 Postgres bağlantısı için .env dosyasına aşağıdaki anahtarlar karşılıkları ile beraber eklenmelidir:
 
 ```bash
-PORT=
+PORT=5050
 PGHOST=
 PGUSER=
 PGDATABASE=
