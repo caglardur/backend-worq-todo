@@ -26,14 +26,14 @@ npm install
 
 ## ENV file örneği:
 
-Postgres bağlantısı için .env dosyasına aşağıdaki anahtarlar karşılıkları ile beraber eklenmelidir:
+Postgres bağlantısı için .env dosyasına aşağıdaki anahtarlar "PGPASSWORD" kısmı düzeltilerek eklenmelidir:
 
 ```bash
 PORT=5050
 PGHOST=localhost
 PGUSER=postgres
 PGDATABASE=todo
-PGPASSWORD=
+PGPASSWORD=test1234
 PGPORT=5432
 ```
 
