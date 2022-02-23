@@ -30,11 +30,11 @@ Postgres bağlantısı için .env dosyasına aşağıdaki anahtarlar karşılık
 
 ```bash
 PORT=5050
-PGHOST=
-PGUSER=
-PGDATABASE=
+PGHOST=localhost
+PGUSER=postgres
+PGDATABASE=todo
 PGPASSWORD=
-PGPORT=
+PGPORT=5432
 ```
 
 ## Database oluşturma
@@ -42,6 +42,8 @@ PGPORT=
 "tasks" isimli postgres tablosu oluşturmak için aşağıdaki kodu sql shell'e yazınız.
 
 ```bash
+CREATE DATABASE todo;
+
 CREATE TABLE public.tasks (
     id bigserial NOT NULL,
     title character varying(50) NOT NULL,
